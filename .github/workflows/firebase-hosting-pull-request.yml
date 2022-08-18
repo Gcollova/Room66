@@ -13,6 +13,7 @@ name: Deploy to Firebase Hosting on PR
           echo REACT_STORAGEBUCKET=${{ secrets.STORAGEBUCKET }} >> .env
           echo REACT_APP_MESSAGINGSENDERID=${{ secrets.MESSAGINGSENDERID}} >> .env
           echo REACT_APP_APPID=${{ secrets.APPID }} >> .env
+          echo REACT_APP_ROOM=${{ secrets.ROOM }} >> .env
           cat .env
 jobs:
   build_and_preview:
